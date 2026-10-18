@@ -1,0 +1,17 @@
+test_binary_operators (test_lab2.TestLab2.test_binary_operators) ... ok
+test_budget_penalty (test_lab2.TestLab2.test_budget_penalty) ... ok
+test_budget_random (test_lab2.TestLab2.test_budget_random) ... ok
+test_budget_repair (test_lab2.TestLab2.test_budget_repair) ... ok
+test_conflicts_detected (test_lab2.TestLab2.test_conflicts_detected) ... ok
+test_deterministic_problem (test_lab2.TestLab2.test_deterministic_problem) ... ok
+test_greedy_feasible (test_lab2.TestLab2.test_greedy_feasible) ... ok
+test_repair_all_ones (test_lab2.TestLab2.test_repair_all_ones) ... ok
+test_repair_idempotent (test_lab2.TestLab2.test_repair_idempotent) ... ok
+test_repair_never_exceeds_capacity (test_lab2.TestLab2.test_repair_never_exceeds_capacity) ... ok
+test_reproducibility (test_lab2.TestLab2.test_reproducibility) ... ok
+test_valid_mandatory_instance (test_lab2.TestLab2.test_valid_mandatory_instance) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.088s
+
+OK

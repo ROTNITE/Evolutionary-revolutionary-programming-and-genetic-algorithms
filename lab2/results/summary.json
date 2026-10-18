@@ -1,0 +1,348 @@
+{
+  "variant": "демонстрационный V=3; N,Q отсутствуют",
+  "lab1_dimension_note": "d=5+(22 mod 6)=9 относится только к ЛР1",
+  "n": 40,
+  "mandatory_1based": [
+    1,
+    2,
+    3
+  ],
+  "capacity": 133,
+  "conflicts_1based": [
+    [
+      1,
+      19
+    ],
+    [
+      2,
+      17
+    ],
+    [
+      3,
+      9
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      4,
+      9
+    ],
+    [
+      4,
+      12
+    ],
+    [
+      4,
+      21
+    ],
+    [
+      4,
+      24
+    ],
+    [
+      5,
+      8
+    ],
+    [
+      5,
+      21
+    ],
+    [
+      6,
+      7
+    ],
+    [
+      7,
+      8
+    ],
+    [
+      7,
+      36
+    ],
+    [
+      10,
+      18
+    ],
+    [
+      13,
+      32
+    ],
+    [
+      14,
+      21
+    ],
+    [
+      17,
+      18
+    ],
+    [
+      19,
+      34
+    ],
+    [
+      19,
+      36
+    ],
+    [
+      23,
+      25
+    ],
+    [
+      25,
+      32
+    ],
+    [
+      27,
+      38
+    ],
+    [
+      32,
+      38
+    ],
+    [
+      37,
+      38
+    ]
+  ],
+  "data_seed": 2026101802,
+  "run_seed_base": 2026102000,
+  "runs_per_group": 20,
+  "budget_per_run": 5522,
+  "parameters": {
+    "population": 48,
+    "generations": 120,
+    "elitism": 2,
+    "tournament_k": 3,
+    "crossover_probability": 0.88,
+    "mutation_probability_per_bit": 0.025,
+    "initial_1_probability": 0.32,
+    "crossover": "uniform",
+    "penalty_missing": 400,
+    "penalty_conflict": 250,
+    "penalty_excess_kg": 25
+  },
+  "statistics": {
+    "ГА: ремонт / bitflip": {
+      "best": 811,
+      "mean": 810.15,
+      "median": 811.0,
+      "std_sample": 3.801315561749642,
+      "worst": 794,
+      "mean_feasible_rate": 1.0,
+      "mean_elapsed_seconds": 0.18272144539998864,
+      "success_feasible_runs": 20
+    },
+    "ГА: штраф / bitflip": {
+      "best": 811,
+      "mean": 794.65,
+      "median": 796.0,
+      "std_sample": 11.494964572642917,
+      "worst": 774,
+      "mean_feasible_rate": 0.3968399130749728,
+      "mean_elapsed_seconds": 0.11173316634998968,
+      "success_feasible_runs": 20
+    },
+    "ГА: ремонт / swap": {
+      "best": 811,
+      "mean": 807.05,
+      "median": 811.0,
+      "std_sample": 7.0597077619552016,
+      "worst": 794,
+      "mean_feasible_rate": 1.0,
+      "mean_elapsed_seconds": 0.28570167325000284,
+      "success_feasible_runs": 20
+    },
+    "Случайный допустимый": {
+      "best": 811,
+      "mean": 788.5,
+      "median": 786.5,
+      "std_sample": 8.9824390076591,
+      "worst": 776,
+      "mean_feasible_rate": 1.0,
+      "mean_elapsed_seconds": 0.1916318085499995,
+      "success_feasible_runs": 20
+    }
+  },
+  "best_overall": {
+    "configuration": "ГА: ремонт / bitflip",
+    "seed": 2026102000,
+    "value": 811,
+    "weight": 133,
+    "items_1based": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      18,
+      20,
+      22,
+      26,
+      28,
+      30,
+      31,
+      33,
+      34,
+      39
+    ],
+    "checks": [
+      0,
+      0,
+      0
+    ]
+  },
+  "greedy": {
+    "value": 811,
+    "weight": 133,
+    "items_1based": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      18,
+      20,
+      22,
+      26,
+      28,
+      30,
+      31,
+      33,
+      34,
+      39
+    ]
+  },
+  "examples": [
+    {
+      "kind": "допустимый: только обязательные",
+      "items": [
+        1,
+        2,
+        3
+      ],
+      "value": 200,
+      "weight": 46,
+      "feasible": true,
+      "violation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "kind": "допустимый: жадная эвристика",
+      "items": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        18,
+        20,
+        22,
+        26,
+        28,
+        30,
+        31,
+        33,
+        34,
+        39
+      ],
+      "value": 811,
+      "weight": 133,
+      "feasible": true,
+      "violation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "kind": "недопустимый: нет обязательного",
+      "items": [
+        2,
+        3
+      ],
+      "value": 111,
+      "weight": 26,
+      "feasible": false,
+      "violation": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "kind": "недопустимый: конфликт",
+      "items": [
+        1,
+        2,
+        3,
+        19
+      ],
+      "value": 270,
+      "weight": 57,
+      "feasible": false,
+      "violation": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "kind": "недопустимый: перегруз и конфликты",
+      "items": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "value": 2263,
+      "weight": 441,
+      "feasible": false,
+      "violation": [
+        0,
+        24,
+        308
+      ]
+    }
+  ]
+}

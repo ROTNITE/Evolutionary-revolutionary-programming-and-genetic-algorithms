@@ -1,0 +1,17 @@
+{
+  "runs": 20,
+  "seed_base": 2026102000,
+  "data_seed": 2026101802,
+  "population": 48,
+  "generations": 120,
+  "elitism": 2,
+  "tournament_k": 3,
+  "crossover_probability": 0.88,
+  "mutation_probability_per_bit": 0.025,
+  "initial_1_probability": 0.32,
+  "crossover": "uniform",
+  "penalty_missing": 400,
+  "penalty_conflict": 250,
+  "penalty_excess_kg": 25,
+  "evaluation_budget": 5522
+}
